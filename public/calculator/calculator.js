@@ -30,6 +30,8 @@ function appendOperator(op) {
     }
     previousInput = currentInput;
     operator = op;
+    currentInput = '0';
+    updateDisplay();
     shouldResetDisplay = true;
 }
 
