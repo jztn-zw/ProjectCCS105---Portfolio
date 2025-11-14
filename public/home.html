@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="gradient-text">PORTFOLIO</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title fade-in">
+                        <span> Hi, I'm <span class="gradient-text">Jaztin</span> </span>
+                    </h1>
+                    <h2 class="hero-subtitle fade-in">
+                        I'm a <span class="typing"></span>
+                    </h2>
+
+                    <p class="hero-description fade-in">
+                        I craft modern web applications that blend elegant front-end
+                        design with powerful back-end functionality. Focused on
+                        performance, precision, and user experience.
+                    </p>
+                    <div class="hero-quote fade-in">
+                        <p>"I build ideas into code — where logic meets design."</p>
+                    </div>
+                    <div class="hero-buttons fade-in">
+                        <a href="#projects" class="btn btn-primary glow">
+                            <i data-lucide="code-2"></i>
+                            View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i data-lucide="mail"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <div class="image-placeholder">
+                        <img src="img/3.png" alt="Profile Image" class="main-photo" />
+                        <img src="img/1.png" alt="Profile Image Dark" class="hover-photo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title gradient-text">About Me</h2>
+
+            <div class="about-grid">
+                <!-- Left Side - Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="img/5.png" alt="Profile Photo" />
+                    </div>
+                </div>
+                <!-- Right Side - Content -->
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm <strong>Jaztin</strong>, a 3rd-year
+                            <strong>Computer Science student</strong> at
+                            <em>Manuel S. Enverga University Foundation – Candelaria</em>,
+                            passionate about learning, creating, and bringing ideas to life
+                            through code.
+                        </p>
+                        <p>
+                            My journey started with curiosity — I used to explore how
+                            websites were made, and that simple interest turned into a
+                            strong passion for <strong>web development</strong>. From
+                            crafting the design you see on screen to building what works
+                            behind it, I enjoy every step of the process.
+                        </p>
+                        <p>
+                            I focus on developing
+                            <strong>modern and responsive web applications</strong> using
+                            technologies like <span class="highlight">React</span>,
+                            <span class="highlight">Node.js</span>,
+                            <span class="highlight">Express</span>, and
+                            <span class="highlight">PostgreSQL</span>. I learn quickly
+                            through experience and can easily adapt to new tools and
+                            technologies
+                        </p>
+                        <p>
+                            Beyond coding, I’m driven by big dreams and goals — to grow, to
+                            create, and to build things that make a difference. I believe
+                            every project, no matter how small, is a step forward toward
+                            something meaningful.
+                        </p>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="info-item">
+                            <i data-lucide="graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>BS Computer Science</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Sariaya, Quezon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title gradient-text">My Tech Stack</h2>
+            <p class="section-subtitle">
+                My workflow combines strong front-end skills with practical back-end experience.
+                I develop responsive and visually polished interfaces using HTML, CSS, Tailwind,
+                JavaScript, and React — powered by Vite for speed. For full-stack development,
+                I use Node.js with PostgreSQL and Supabase. I also design UI layouts in Figma
+                and Canva to create smooth, modern user experiences.
+
+            </p>
+
+            <!-- Logo Carousel -->
+            <div class="tech-carousel">
+                <div class="tech-track" id="techTrack">
+                    <a href="https://www.w3schools.com/html/" class="tech-logo-item" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML" />
+                        <span>HTML</span>
+                    </a>
+                    <a href="https://www.w3schools.com/Css/" class="tech-logo-item" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="CSS" />
+                        <span>CSS</span>
+                    </a>
+                    <a href="https://www.w3schools.com/js/DEFAULT.asp" class="tech-logo-item" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" />
+                        <span>JavaScript</span>
+                    </a>
+                    <a href="https://react.dev" class="tech-logo-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                            alt="React" />
+                        <span>React</span>
+                    </a>
+                    <a href="https://vitejs.dev" class="tech-logo-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+                            alt="Vite" />
+                        <span>Vite</span>
+                    </a>
+                    <a href="https://tailwindcss.com" class="tech-logo-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                            alt="Tailwind CSS" />
+                        <span>Tailwind CSS</span>
+                    </a>
+                    <a href="https://git-scm.com" class="tech-logo-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                        <span>Git</span>
+                    </a>
+                    <a href="https://nodejs.org" class="tech-logo-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js" />
+                        <span>Node.js</span>
+                    </a>
+                    <a href="https://www.postgresql.org" class="tech-logo-item" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                            alt="PostgreSQL" />
+                        <span>PostgreSQL</span>
+                    </a>
+                    <a href="https://www.supabase.com" class="tech-logo-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
+                            alt="Supabase" />
+                        <span>Supabase</span>
+                    </a>
+                    <a href="https://www.figma.com" class="tech-logo-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                            alt="Figma" />
+                        <span>Figma</span>
+                    </a>
+                    <a href="https://www.canva.com" class="tech-logo-item" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"
+                            alt="Canva" />
+                        <span>Canva</span>
+                    </a>
+                </div>
+            </div>
+            <p class="tech-tagline">
+                "A powerful stack for a fast, beautiful, and functional web."
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title gradient-text">Featured Projects</h2>
+            <p class="section-subtitle">
+                A glimpse into what I've built and explored.
+            </p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img">
+                            <i data-lucide="leaf"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🧩 GreenWay</h3>
+                        <p class="project-description">
+                            A modern environmental awareness platform built with React and
+                            Node.js, designed to help users track sustainable habits and
+                            connect with eco-friendly initiatives.
+                        </p>
+                        <div class="project-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Prisma</span>
+                            <span>PostgreSQL</span>
+                            <span>Supabase</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <ul class="project-features">
+                            <li>
+                                <i data-lucide="check"></i> User authentication and dashboards
+                            </li>
+                            <li><i data-lucide="check"></i> Real-time progress tracking</li>
+                            <li>
+                                <i data-lucide="check"></i> Responsive and mobile-friendly UI
+                            </li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-lucide="external-link"></i>
+                                View Project
+                            </a>
+                            <a href="#" class="project-link">
+                                <i data-lucide="github"></i>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🌐 DevSpace</h3>
+                        <p class="project-description">
+                            A minimalist developer blog platform for sharing tutorials and
+                            personal projects.
+                        </p>
+                        <div class="project-stack">
+                            <span>Next.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>Supabase</span>
+                        </div>
+                        <ul class="project-features">
+                            <li>
+                                <i data-lucide="check"></i> Markdown-based content system
+                            </li>
+                            <li><i data-lucide="check"></i> Dark/light theme toggle</li>
+                            <li>
+                                <i data-lucide="check"></i> Secure login and profile
+                                customization
+                            </li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-lucide="external-link"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i data-lucide="github"></i>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img">
+                            <i data-lucide="user"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>💼 Portfolio v2</h3>
+                        <p class="project-description">
+                            My personal portfolio (this one!) built to showcase my growth
+                            and work as a full-stack developer.
+                        </p>
+                        <div class="project-stack">
+                            <span>React</span>
+                            <span>Framer Motion</span>
+                            <span>Tailwind CSS</span>
+                            <span>Vite</span>
+                        </div>
+                        <ul class="project-features">
+                            <li><i data-lucide="check"></i> Dynamic animations</li>
+                            <li><i data-lucide="check"></i> Responsive layout</li>
+                            <li><i data-lucide="check"></i> Contact form integration</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i data-lucide="github"></i>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title gradient-text">Get in Touch</h2>
+            <p class="section-subtitle">Let's build something amazing together.</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        I'm always open to collaborations, freelance projects, or just a
+                        friendly chat about tech and design. Feel free to reach out!
+                    </p>
+
+                    <div class="social-links">
+                        <a href="mailto:jaztincontreras2805@gmail.com" class="social-link">
+                            <i data-lucide="mail"></i>
+                            <span>jaztincontreras2805@gmail.com</span>
+                        </a>
+                        <a href="https://www.facebook.com/jaztinabram.contreras" target="_blank" class="social-link">
+                            <i data-lucide="facebook"></i>
+                            <span>facebook.com/jaztinabramcontreras</span>
+                        </a>
+                        <a href="https://github.com/jztn-zw" target="_blank" class="social-link">
+                            <i data-lucide="github"></i>
+                            <span>github.com/jztn-zw</span>
+                        </a>
+                        <a href="https://tiktok.com/@jztn_05" target="_blank" class="social-link">
+                            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121 121 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z" />
+                            </svg>
+                            <span>@jztn_05</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary glow">
+                        <i data-lucide="send"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+           
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jztn. Built with passion and purpose.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/techstack.js"></script>
+</body>
+
+</html>
