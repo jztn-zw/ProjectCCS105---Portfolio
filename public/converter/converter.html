@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <p class="subtitle">Convert between different units instantly</p>
+
+        <!-- Conversion Type Selector -->
+        <div class="converter-tabs">
+            <button class="tab active" data-type="temperature">Temperature</button>
+            <button class="tab" data-type="weight">Weight</button>
+            <button class="tab" data-type="length">Length</button>
+            <button class="tab" data-type="time">Time</button>
+            <button class="tab" data-type="currency">Currency</button>
+        </div>
+
+        <!-- Converter Card -->
+        <div class="converter-card">
+            <!-- Temperature Converter -->
+            <div class="converter-section active" id="temperature">
+                <div class="input-group">
+                    <label for="celsius">Celsius (°C)</label>
+                    <input type="number" id="celsius" placeholder="Enter value">
+                </div>
+                <div class="swap-icon">⇅</div>
+                <div class="input-group">
+                    <label for="fahrenheit">Fahrenheit (°F)</label>
+                    <input type="number" id="fahrenheit" placeholder="Enter value">
+                </div>
+            </div>
+
+            <!-- Weight Converter -->
+            <div class="converter-section" id="weight">
+                <div class="input-group">
+                    <label for="kilograms">Kilograms (kg)</label>
+                    <input type="number" id="kilograms" placeholder="Enter value">
+                </div>
+                <div class="swap-icon">⇅</div>
+                <div class="input-group">
+                    <label for="pounds">Pounds (lbs)</label>
+                    <input type="number" id="pounds" placeholder="Enter value">
+                </div>
+            </div>
+
+            <!-- Length Converter -->
+            <div class="converter-section" id="length">
+                <div class="input-group">
+                    <label for="meters">Meters (m)</label>
+                    <input type="number" id="meters" placeholder="Enter value">
+                </div>
+                <div class="swap-icon">⇅</div>
+                <div class="input-group">
+                    <label for="feet">Feet (ft)</label>
+                    <input type="number" id="feet" placeholder="Enter value">
+                </div>
+            </div>
+
+            <!-- Time Converter -->
+            <div class="converter-section" id="time">
+                <div class="input-group">
+                    <label for="minutes">Minutes (min)</label>
+                    <input type="number" id="minutes" placeholder="Enter value">
+                </div>
+                <div class="swap-icon">⇅</div>
+                <div class="input-group">
+                    <label for="hours">Hours (hr)</label>
+                    <input type="number" id="hours" placeholder="Enter value">
+                </div>
+            </div>
+
+            <!-- Currency Converter -->
+            <div class="converter-section" id="currency">
+                <div class="input-group">
+                    <label for="php">Philippine Peso (PHP)</label>
+                    <input type="number" id="php" placeholder="Enter value">
+                </div>
+                <div class="swap-icon">⇅</div>
+                <div class="input-group">
+                    <label for="usd">US Dollar (USD)</label>
+                    <input type="number" id="usd" placeholder="Enter value">
+                </div>
+                <p class="exchange-note">Exchange rate: 1 USD = 56 PHP (approximate)</p>
+            </div>
+
+            <button class="clear-btn" onclick="clearInputs()">Clear All</button>
+        </div>
+    </div>
+
+    <script src="converter.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.calculator {
+    background: linear-gradient(145deg, #1e2139, #161829);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    width: 100%;
+    max-width: 380px;
+}
+
+.display {
+    background: #0d1117;
+    border-radius: 15px;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    text-align: right;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.display-text {
+    color: #3b82f6;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    min-height: 60px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    background: linear-gradient(145deg, #2a2f4a, #1f2337);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    border-radius: 12px;
+    color: #e2e8f0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #323757, #252a42);
+    transform: translateY(-2px);
+    box-shadow: 
+        0 6px 20px rgba(59, 130, 246, 0.3),
+        0 0 20px rgba(59, 130, 246, 0.2);
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-operator {
+    background: linear-gradient(145deg, #2563eb, #1d4ed8);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-operator:hover {
+    background: linear-gradient(145deg, #3b82f6, #2563eb);
+    box-shadow: 
+        0 6px 20px rgba(37, 99, 235, 0.4),
+        0 0 25px rgba(59, 130, 246, 0.3);
+}
+
+.btn-clear {
+    background: linear-gradient(145deg, #dc2626, #b91c1c);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-clear:hover {
+    background: linear-gradient(145deg, #ef4444, #dc2626);
+    box-shadow: 
+        0 6px 20px rgba(220, 38, 38, 0.4),
+        0 0 25px rgba(239, 68, 68, 0.3);
+}
+
+.btn-delete {
+    background: linear-gradient(145deg, #ea580c, #c2410c);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-delete:hover {
+    background: linear-gradient(145deg, #f97316, #ea580c);
+    box-shadow: 
+        0 6px 20px rgba(234, 88, 12, 0.4),
+        0 0 25px rgba(249, 115, 22, 0.3);
+}
+
+.btn-equals {
+    background: linear-gradient(145deg, #0ea5e9, #0284c7);
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.btn-equals:hover {
+    background: linear-gradient(145deg, #38bdf8, #0ea5e9);
+    box-shadow: 
+        0 6px 25px rgba(14, 165, 233, 0.5),
+        0 0 30px rgba(56, 189, 248, 0.4);
+}
