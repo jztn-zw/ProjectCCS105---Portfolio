@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
     initializePortfolio();
+    initializeThemeToggle();
 });
 
 function initializePortfolio() {

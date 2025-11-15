@@ -23,10 +23,16 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- Add this inside the navbar container, after nav-menu -->
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i data-lucide="sun"></i>
+                </button>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -324,7 +330,8 @@
                     <div class="project-content">
                         <h3>Stopwatch + Timer</h3>
                         <p class="project-description">
-                            A modern and interactive Stopwatch + Timer app built using pure HTML, Bootstrap, and JavaScript.
+                            A modern and interactive Stopwatch + Timer app built using pure HTML, Bootstrap, and
+                            JavaScript.
                             Features start, stop, reset, and countdown timer.
                         </p>
 
@@ -347,11 +354,11 @@
                                 Live Demo
                             </a>
                         </div>
-                        </div>
                     </div>
                 </div>
-
             </div>
+
+        </div>
         </div>
     </section>
 
