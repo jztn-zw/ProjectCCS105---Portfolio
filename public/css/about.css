@@ -1,0 +1,125 @@
+/* ==================== ABOUT SECTION ==================== */
+.about {
+    background: var(--surface);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 60px;
+    align-items: stretch;
+}
+
+.profile-card {
+    padding: 0;
+    position: sticky;
+    top: 100px;
+    overflow: hidden;
+    align-self: stretch;
+}
+
+.profile-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content {
+    padding: 20px 0;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.about-text strong {
+    color: var(--text);
+}
+
+.highlight {
+    color: var(--primary);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.highlight:hover {
+    color: var(--secondary);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    background: var(--surface);
+    margin-top: 30px;
+    gap: 12px;
+    padding: 20px 30px 20px 20px;
+    border-radius: 15px;
+    border-left: 4px solid var(--primary);
+    border-right: 4px solid var(--primary);
+    font-style: italic;
+    color: var(--text);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: rgba(0, 180, 216, 0.15);
+    transform: translateX(8px);
+    box-shadow: 0 0 20px rgba(0, 180, 216, 0.1);
+}
+
+.info-item i {
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.info-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item h4 {
+    font-size: 1rem;
+    color: var(--text);
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.info-item p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.profile-info {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.profile-info>div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--surface);
+    border-radius: 10px;
+}

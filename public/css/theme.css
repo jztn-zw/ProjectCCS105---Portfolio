@@ -1,0 +1,47 @@
+/* ==================== THEME TOGGLE BUTTON ==================== */
+.theme-toggle {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-toggle:hover {
+    border-color: var(--primary);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--glow);
+}
+
+.theme-toggle i {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    stroke: #ffffff;
+    fill: none;
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .theme-toggle svg {
+    stroke: #ffffff !important;
+}
+
+[data-theme="light"] .theme-toggle svg {
+    stroke: rgb(0, 0, 0) !important;
+}
+
+.theme-toggle:hover svg {
+    stroke: var(--secondary) !important;
+}

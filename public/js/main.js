@@ -1,13 +1,13 @@
-// Initialize Lucide icons
 document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
     initializePortfolio();
     initializeThemeToggle();
+    addCustomStyles();
 });
 
 function initializePortfolio() {
-    initNavbar();
-    initScrollAnimation();
-    initContactForm();
+    initializeNavigation();
+    initializeAnimations();
+    initializeContactForm();
     createParticleEffect();
 }

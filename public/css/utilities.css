@@ -1,0 +1,17 @@
+/* ==================== GRADIENTS & EFFECTS ==================== */
+.gradient-text {
+    font-family: "Poppins";
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.glow {
+    box-shadow: 0 0 20px var(--glow), 0 0 40px var(--glow);
+    transition: all 0.3s ease;
+}
+
+.glow:hover {
+    box-shadow: 0 0 30px var(--glow), 0 0 60px var(--glow);
+}

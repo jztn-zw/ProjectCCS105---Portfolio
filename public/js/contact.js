@@ -1,21 +1,25 @@
-function initContactForm() {
+// contact-form.js - Contact form handling
+function initializeContactForm() {
     const contactForm = document.getElementById('contactForm');
-    if (!contactForm) return;
-
+    
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-
+        
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
             message: document.getElementById('message').value
         };
 
-        showNotification("Message sent successfully! I'll get back to you soon. 🚀", 'success');
+        // Show success message
+        showNotification('Message sent successfully! I\'ll get back to you soon. 🚀', 'success');
+        
+        // Reset form
         contactForm.reset();
     });
 }
 
+// Notification system
 function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;
@@ -23,7 +27,7 @@ function showNotification(message, type = 'success') {
         <i data-lucide="${type === 'success' ? 'check-circle' : 'alert-circle'}"></i>
         <span>${message}</span>
     `;
-
+    
     notification.style.cssText = `
         position: fixed;
         top: 100px;
@@ -39,10 +43,10 @@ function showNotification(message, type = 'success') {
         z-index: 10000;
         animation: slideIn 0.3s ease;
     `;
-
+    
     document.body.appendChild(notification);
     lucide.createIcons();
-
+    
     setTimeout(() => {
         notification.style.animation = 'slideOut 0.3s ease';
         setTimeout(() => notification.remove(), 300);
