@@ -1,4 +1,4 @@
-// theme.js - Theme toggle functionality
+// Theme toggle functionality
 function initializeThemeToggle() {
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;

@@ -1,4 +1,3 @@
-// contact-form.js - Contact form handling
 function initializeContactForm() {
     const contactForm = document.getElementById('contactForm');
     
@@ -12,7 +11,7 @@ function initializeContactForm() {
         };
 
         // Show success message
-        showNotification('Message sent successfully! I\'ll get back to you soon. 🚀', 'success');
+        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
         
         // Reset form
         contactForm.reset();

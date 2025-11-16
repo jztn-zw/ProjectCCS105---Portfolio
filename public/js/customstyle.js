@@ -1,4 +1,3 @@
-// styles.js - Dynamic CSS styles
 function addCustomStyles() {
     const style = document.createElement('style');
     style.textContent = `

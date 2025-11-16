@@ -1,4 +1,3 @@
-// Tech Stack TRUE Infinite Carousel (No Stops, No Jumps)
 function initTechCarousel() {
     const track = document.getElementById('techTrack');
     if (!track) return;
@@ -6,11 +5,11 @@ function initTechCarousel() {
     // Get original logos
     const originalContent = track.innerHTML;
     
-    // Duplicate content twice (total 3 copies for seamless loop)
+    // Duplicate content twice
     track.innerHTML = originalContent + originalContent + originalContent;
 
     let scrollPosition = 0;
-    const scrollSpeed = 0.5; // Adjust speed here
+    const scrollSpeed = 0.5; // speed ng carousel
     let animationId;
     let isPaused = false;
     
@@ -22,7 +21,7 @@ function initTechCarousel() {
         // Calculate width of one complete set
         const itemWidth = firstItem.offsetWidth;
         const itemsCount = track.children.length / 3; // Divide by 3 since we tripled
-        const gap = 80; // From CSS
+        const gap = 80; 
         const oneSetWidth = (itemWidth + gap) * itemsCount;
 
         function animate() {
