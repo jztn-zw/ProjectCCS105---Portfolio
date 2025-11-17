@@ -9,5 +9,4 @@ function initializePortfolio() {
     initializeNavigation();
     initializeAnimations();
     initializeContactForm();
-    createParticleEffect();
 }

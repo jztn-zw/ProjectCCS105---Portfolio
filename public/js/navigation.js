@@ -1,5 +1,3 @@
-// Navigation and menu functionality
-
 function initializeNavigation() {
     // Mobile Menu Toggle
     const menuToggle = document.getElementById('menuToggle');
